@@ -190,39 +190,11 @@
   ],
   "portfolio": [
     {
-      "name": "Optimization of AI-based fusion manufacturing process conditions and prediction of defects",
+      "name": "Hierarchical federated learning simulations and clients contribution measurement",
       "category": "Project",
-      "date": "2020-06",
+      "date": "2024-06",
       "url": "",
-      "description": "Seoyeon E-hwa / Inter-X, Korea (Jun. 2020 ~ Feb. 2021)"
-    },
-    {
-      "name": "Energy Consumption Analysis for Additive Manufacturing",
-      "category": "Project",
-      "date": "2020-07",
-      "url": "",
-      "description": "UNIST UDMML Lab, Korea (Jul. 2020 ~ Jul. 2021)"
-    },
-    {
-      "name": "Manufacturing Bigdata Analysis - anomaly detection based on manufacturing process data",
-      "category": "Project",
-      "date": "2020-11",
-      "url": "",
-      "description": "Hankuk Mold, Korea (Nov. 2020 ~ Feb. 2021)"
-    },
-    {
-      "name": "Predicting stock price volatility using FinBERT",
-      "category": "Project",
-      "date": "2021-03",
-      "url": "",
-      "description": "AICP Program, UNIST, Korea (Mar. 2021 ~ Dec. 2021)"
-    },
-    {
-      "name": "Development of feasibility verification technology for resource hidden deep learning model",
-      "category": "Project",
-      "date": "2023-04",
-      "url": "",
-      "description": "ETRI, Korea (Apr. 2023 ~ Nov. 2023)"
+      "description": "ETRI, Korea (Jun. 2024 ~ Nov. 2024)"
     },
     {
       "name": "Multi-inference performance based federated learning asynchronous consensus",
@@ -232,11 +204,39 @@
       "description": "ETRI, Korea (Jun. 2023 ~ Nov. 2023)"
     },
     {
-      "name": "Hierarchical federated learning simulations and clients contribution measurement",
+      "name": "Development of feasibility verification technology for resource hidden deep learning model",
       "category": "Project",
-      "date": "2024-06",
+      "date": "2023-04",
       "url": "",
-      "description": "ETRI, Korea (Jun. 2024 ~ Nov. 2024)"
+      "description": "ETRI, Korea (Apr. 2023 ~ Nov. 2023)"
+    },
+    {
+      "name": "Predicting stock price volatility using FinBERT",
+      "category": "Project",
+      "date": "2021-03",
+      "url": "",
+      "description": "AICP Program, UNIST, Korea (Mar. 2021 ~ Dec. 2021)"
+    },
+    {
+      "name": "Manufacturing Bigdata Analysis - anomaly detection based on manufacturing process data",
+      "category": "Project",
+      "date": "2020-11",
+      "url": "",
+      "description": "Hankuk Mold, Korea (Nov. 2020 ~ Feb. 2021)"
+    },
+    {
+      "name": "Energy Consumption Analysis for Additive Manufacturing",
+      "category": "Project",
+      "date": "2020-07",
+      "url": "",
+      "description": "UNIST UDMML Lab, Korea (Jul. 2020 ~ Jul. 2021)"
+    },
+    {
+      "name": "Optimization of AI-based fusion manufacturing process conditions and prediction of defects",
+      "category": "Project",
+      "date": "2020-06",
+      "url": "",
+      "description": "Seoyeon E-hwa / Inter-X, Korea (Jun. 2020 ~ Feb. 2021)"
     }
   ]
 }
