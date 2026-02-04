@@ -2,7 +2,7 @@
 title: "MetaVers: Meta-Learned Versatile Representations for Personalized Federated Learning"
 collection: publications
 category: conferences
-permalink: /publication/metavers-2024.md
+permalink: /publication/metavers-2024
 date: 2024-02-01
 venue: 'Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)'
 slidesurl: 'https://drive.google.com/file/d/1-GT4Eb5wEIbVAF86rsRGRLOt_lZD5D2q/view'

@@ -32,3 +32,41 @@ author_profile: true
 </div>
 {% endfor %}
 {% endif %}
+
+{% if cv.teaching.size > 0 %}
+<h2>Teaching</h2>
+{% for item in cv.teaching %}
+<div class="{{ include.type | default: "list" }}__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    <h2 class="archive__item-title" itemprop="headline">
+      {{ item.course }}
+    </h2>
+    <p>{{ item.role }}, <i>{{ item.institution }}</i> · {{ item.date }}</p>
+    {% if item.description %}
+    <p class="archive__item-excerpt">{{ item.description }}</p>
+    {% endif %}
+  </article>
+</div>
+{% endfor %}
+{% endif %}
+
+{% if cv.portfolio.size > 0 %}
+<h2>Projects</h2>
+{% for item in cv.portfolio %}
+<div class="{{ include.type | default: "list" }}__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    <h2 class="archive__item-title" itemprop="headline">
+      {% if item.url %}
+      <a href="{{ item.url }}" target="_blank">{{ item.name }}</a>
+      {% else %}
+      {{ item.name }}
+      {% endif %}
+    </h2>
+    <p class="archive__item-excerpt">{{ item.description }}</p>
+    {% if item.date %}
+    <p class="page__date"><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ item.date }}</p>
+    {% endif %}
+  </article>
+</div>
+{% endfor %}
+{% endif %}

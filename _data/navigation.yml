@@ -13,17 +13,8 @@ main:
   - title: "Patents"
     url: /patents/
 
-  - title: "Teaching"
-    url: /teaching/
-
-  - title: "Projects"
-    url: /projects/
-
   - title: "Awards"
     url: /awards/
 
   - title: "Service"
     url: /service/
-
-  - title: "CV"
-    url: /cv/
