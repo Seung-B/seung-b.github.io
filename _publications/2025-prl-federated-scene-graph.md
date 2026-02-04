@@ -10,4 +10,3 @@ pages: '195-201'
 paperurl: 'https://www.sciencedirect.com/science/article/pii/S0167865525002727'
 citation: 'SB Ha*, T Lee*, J Lim, SW Yoon. (2025). &quot;Benchmarking federated learning for semantic datasets: Federated scene graph generation.&quot; <i>Pattern Recognition Letters</i>. 197, 195-201.'
 ---
-Federated scene graph generation benchmark for semantic datasets.
