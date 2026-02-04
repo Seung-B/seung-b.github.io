@@ -1,0 +1,26 @@
+---
+layout: archive
+title: "Patents"
+permalink: /patents/
+author_profile: true
+---
+
+{% include base_path %}
+
+{% assign cv = site.data.cv %}
+
+{% if cv.patents.size > 0 %}
+{% for patent in cv.patents %}
+<div class="{{ include.type | default: "list" }}__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    <h2 class="archive__item-title" itemprop="headline">
+      {{ patent.name }}
+    </h2>
+    <p>{{ patent.inventors }}</p>
+    <p><i>{{ patent.number }}</i> · {{ patent.date }}</p>
+  </article>
+</div>
+{% endfor %}
+{% else %}
+<p>No patents to display.</p>
+{% endif %}

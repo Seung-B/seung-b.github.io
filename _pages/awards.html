@@ -1,0 +1,25 @@
+---
+layout: archive
+title: "Awards & Honors"
+permalink: /awards/
+author_profile: true
+---
+
+{% include base_path %}
+
+{% assign cv = site.data.cv %}
+
+{% if cv.awards.size > 0 %}
+{% for award in cv.awards %}
+<div class="{{ include.type | default: "list" }}__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    <h2 class="archive__item-title" itemprop="headline">
+      {{ award.title }}
+    </h2>
+    <p><i>{{ award.awarder }}</i>{% if award.date %} · {{ award.date }}{% endif %}</p>
+  </article>
+</div>
+{% endfor %}
+{% else %}
+<p>No awards to display.</p>
+{% endif %}

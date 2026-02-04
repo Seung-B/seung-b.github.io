@@ -1,0 +1,32 @@
+---
+layout: archive
+title: "Projects"
+permalink: /projects/
+author_profile: true
+---
+
+{% include base_path %}
+
+{% assign cv = site.data.cv %}
+
+{% if cv.portfolio.size > 0 %}
+{% for item in cv.portfolio %}
+<div class="{{ include.type | default: "list" }}__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    <h2 class="archive__item-title" itemprop="headline">
+      {% if item.url %}
+      <a href="{{ item.url }}" target="_blank">{{ item.name }}</a>
+      {% else %}
+      {{ item.name }}
+      {% endif %}
+    </h2>
+    <p class="archive__item-excerpt">{{ item.description }}</p>
+    {% if item.date %}
+    <p class="page__date"><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ item.date }}</p>
+    {% endif %}
+  </article>
+</div>
+{% endfor %}
+{% else %}
+<p>No projects to display.</p>
+{% endif %}

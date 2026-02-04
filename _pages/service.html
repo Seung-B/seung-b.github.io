@@ -1,0 +1,26 @@
+---
+layout: archive
+title: "Academic Service"
+permalink: /service/
+author_profile: true
+---
+
+{% include base_path %}
+
+{% assign cv = site.data.cv %}
+
+{% if cv.service.size > 0 %}
+<h2>Conference/Journal Reviewing</h2>
+{% for item in cv.service %}
+<div class="{{ include.type | default: "list" }}__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    <h2 class="archive__item-title" itemprop="headline">
+      {{ item.role }}
+    </h2>
+    <p class="archive__item-excerpt">{{ item.venue }}</p>
+  </article>
+</div>
+{% endfor %}
+{% else %}
+<p>No service to display.</p>
+{% endif %}

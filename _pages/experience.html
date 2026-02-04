@@ -1,0 +1,34 @@
+---
+layout: archive
+title: "Experience"
+permalink: /experience/
+author_profile: true
+---
+
+{% include base_path %}
+
+{% assign cv = site.data.cv %}
+
+{% if cv.work.size > 0 %}
+<h2>Research Experience</h2>
+{% for work in cv.work %}
+<div class="{{ include.type | default: "list" }}__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    <h2 class="archive__item-title" itemprop="headline">
+      {{ work.position }}
+    </h2>
+    <p><i>{{ work.company }}</i> · {{ work.startDate }}{% if work.endDate %} – {{ work.endDate }}{% endif %}</p>
+    {% if work.summary %}
+    <p class="archive__item-excerpt">{{ work.summary }}</p>
+    {% endif %}
+    {% if work.highlights.size > 0 %}
+    <ul>
+      {% for highlight in work.highlights %}
+      <li>{{ highlight }}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </article>
+</div>
+{% endfor %}
+{% endif %}
