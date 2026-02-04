@@ -1,12 +1,13 @@
 {
   "basics": {
     "name": "SeungBum Ha",
+    "label": "Ph.D. Student",
     "email": "ethereal0507@unist.ac.kr",
-    "phone": "",
+    "phone": "+82-10-6630-8157",
     "website": "https://seung-b.github.io",
-    "summary": "Currently employed at Ulsan National Institute of Science and Technology. Short biography for the left-hand sidebar",
+    "summary": "Ph.D. student at Ulsan National Institute of Science and Technology (UNIST). Research interests: Federated Learning, Machine Unlearning, Trustworthy AI, and Large Model Safety.",
     "location": {
-      "address": "",
+      "address": "50 UNIST-gil, Eonyang-eup, Ulju-gun",
       "postalCode": "",
       "city": "Ulsan",
       "countryCode": "KR",
@@ -25,119 +26,217 @@
       },
       {
         "network": "GitHub",
-        "username": "academicpages",
+        "username": "Seung-B",
         "url": "https://github.com/Seung-B"
       }
     ]
   },
-  "work": [],
+  "work": [
+    {
+      "company": "Machine Intelligence and Information Learning Lab, UNIST",
+      "position": "Research Student",
+      "website": "",
+      "startDate": "2022-08",
+      "endDate": "Present",
+      "summary": "",
+      "highlights": []
+    },
+    {
+      "company": "Homomorphic Encryption Lab, UNIST",
+      "position": "Research Intern",
+      "website": "",
+      "startDate": "2021-12",
+      "endDate": "2022-07",
+      "summary": "",
+      "highlights": []
+    },
+    {
+      "company": "Unstructured Data Mining and Machine Learning Lab, UNIST",
+      "position": "Research Intern",
+      "website": "",
+      "startDate": "2020-05",
+      "endDate": "2021-12",
+      "summary": "",
+      "highlights": []
+    }
+  ],
   "education": [
     {
       "institution": "Ulsan National Institute of Science and Technology",
-      "area": "M.S-Ph.D in Artificial Intelligence",
-      "studyType": "",
-      "startDate": "2022",
-      "endDate": "2027",
-      "gpa": null,
-      "courses": []
+      "area": "Ph.D. Student in Artificial Intelligence",
+      "studyType": "Ph.D.",
+      "startDate": "2024-09",
+      "endDate": "Present",
+      "gpa": "3.88 / 4.3",
+      "courses": [],
+      "advisor": "Sung Whan Yoon"
     },
     {
       "institution": "Ulsan National Institute of Science and Technology",
-      "area": "B.S. in Artificial Intelligence",
-      "studyType": "",
-      "startDate": "2019",
-      "endDate": "2022",
+      "area": "M.S. in Artificial Intelligence",
+      "studyType": "M.S.",
+      "startDate": "2022-08",
+      "endDate": "2024-08",
       "gpa": null,
-      "courses": []
+      "courses": [],
+      "advisor": "Sung Whan Yoon"
+    },
+    {
+      "institution": "Ulsan National Institute of Science and Technology",
+      "area": "B.S. in Industrial Engineering",
+      "studyType": "B.S.",
+      "startDate": "2019-03",
+      "endDate": "2022-08",
+      "gpa": "3.7 / 4.3",
+      "courses": [],
+      "advisor": "Sunghoon Lim",
+      "honors": "Cum Laude"
     }
   ],
-  "skills": [Deep Learning, Federated Learning, AI Safety, Machine Unlearning],
-  "languages": [Korean, English],
+  "skills": [
+    {
+      "name": "Research Interests",
+      "keywords": ["Deep Learning", "Federated Learning", "Trustworthy AI", "Machine Unlearning", "Large Model Safety"]
+    }
+  ],
+  "languages": [
+    {"language": "Korean", "fluency": "Native"},
+    {"language": "English", "fluency": "Professional"}
+  ],
   "interests": [],
   "references": [],
   "publications": [
     {
-      "name": "Paper Title Number 1",
-      "publisher": "Journal 1",
-      "releaseDate": "2009-10-01",
-      "website": "http://academicpages.github.io/files/paper1.pdf",
-      "summary": "This paper is about the number 1. The number 2 is left for future work."
+      "name": "MetaVers: Meta-Learned Versatile Representations for Personalized Federated Learning",
+      "publisher": "Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV 2024)",
+      "releaseDate": "2024",
+      "website": "https://openaccess.thecvf.com/content/WACV2024/papers/Lim_MetaVers_Meta-Learned_Versatile_Representations_for_Personalized_Federated_Learning_WACV_2024_paper.pdf",
+      "summary": "Jin Hyuk Lim*, SeungBum Ha*, Sung Whan Yoon"
     },
     {
-      "name": "Paper Title Number 2",
-      "publisher": "Journal 1",
-      "releaseDate": "2010-10-01",
-      "website": "http://academicpages.github.io/files/paper2.pdf",
-      "summary": "This paper is about the number 2. The number 3 is left for future work."
+      "name": "Benchmarking federated learning for semantic datasets: Federated scene graph generation",
+      "publisher": "Pattern Recognition Letters 197, 195-201",
+      "releaseDate": "2025",
+      "website": "",
+      "summary": "SeungBum Ha*, Taehwan Lee*, Jiyoun Lim, Sung Whan Yoon"
     },
     {
-      "name": "Paper Title Number 3",
-      "publisher": "Journal 1",
-      "releaseDate": "2015-10-01",
-      "website": "http://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about the number 3. The number 4 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 4",
-      "publisher": "GitHub Journal of Bugs",
-      "releaseDate": "2024-02-17",
-      "website": "http://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about fixing template issue #693."
+      "name": "Unlearning's Blind Spots: Over-Unlearning and Prototypical Relearning Attack",
+      "publisher": "arXiv preprint (Under Review)",
+      "releaseDate": "2025",
+      "website": "",
+      "summary": "SeungBum Ha, Saerom Park"
     }
   ],
-  "presentations": [
+  "patents": [
     {
-      "name": "Talk 1 on Relevant Topic in Your Field",
-      "event": "UC San Francisco, Department of Testing",
-      "date": "2012-03-01",
-      "location": "San Francisco, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Tutorial 1 on Relevant Topic in Your Field",
-      "event": "UC-Berkeley Institute for Testing Science",
-      "date": "2013-03-01",
-      "location": "Berkeley, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Talk 2 on Relevant Topic in Your Field",
-      "event": "London School of Testing",
-      "date": "2014-02-01",
-      "location": "London, UK",
-      "description": ""
-    },
-    {
-      "name": "Conference Proceeding talk 3 on Relevant Topic in Your Field",
-      "event": "Testing Institute of America 2014 Annual Conference",
-      "date": "2014-03-01",
-      "location": "Los Angeles, CA, USA",
-      "description": ""
+      "name": "Meta-learning algorithms for personalized federated learning",
+      "number": "KR-Application No. 10-2023-0037350",
+      "inventors": "Sung Whan Yoon, Jinhyuk Lim, SeungBum Ha",
+      "date": "2023"
     }
   ],
+  "awards": [
+    {
+      "title": "The 1st KUIAI Hackathon, Excellence Award (2nd)",
+      "awarder": "Korea University",
+      "date": "2021-01"
+    },
+    {
+      "title": "Data Science Contest, Encouragement Prize",
+      "awarder": "UNIST, KAIST, POSTECH",
+      "date": "2022-01"
+    },
+    {
+      "title": "Undergraduate Full Scholarship",
+      "awarder": "Ulsan National Institute of Science and Technology",
+      "date": "2019-02"
+    },
+    {
+      "title": "Graduate Full Scholarship",
+      "awarder": "Ulsan National Institute of Science and Technology",
+      "date": "2022-08"
+    }
+  ],
+  "presentations": [],
   "teaching": [
     {
-      "course": "Teaching experience 1",
-      "institution": "University 1, Department",
-      "date": "2014-01-01",
-      "role": "Undergraduate course",
+      "course": "Introduction to AI Safety",
+      "institution": "UNIST (IE47001)",
+      "date": "2024-03",
+      "role": "Teaching Assistant",
+      "description": "Advanced Topics in Industrial Engineering"
+    },
+    {
+      "course": "Distributed Learning",
+      "institution": "UNIST (AI51501)",
+      "date": "2024-09",
+      "role": "Teaching Assistant",
       "description": ""
     },
     {
-      "course": "Teaching experience 2",
-      "institution": "University 1, Department",
-      "date": "2015-01-01",
-      "role": "Workshop",
+      "course": "AI Novatus Academia Curriculum",
+      "institution": "Gyeongsangnam-do",
+      "date": "2022-09",
+      "role": "Teaching Assistant",
       "description": ""
+    }
+  ],
+  "service": [
+    {
+      "role": "Reviewer",
+      "venue": "ICLR 2025, ICLR 2026, CVPR 2026, ECCV 2026"
     }
   ],
   "portfolio": [
     {
-      "name": "Portfolio item number 1",
-      "category": "portfolio",
-      "date": "",
+      "name": "Optimization of AI-based fusion manufacturing process conditions and prediction of defects",
+      "category": "Project",
+      "date": "2020-06",
       "url": "",
-      "description": "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+      "description": "Seoyeon E-hwa / Inter-X, Korea (Jun. 2020 ~ Feb. 2021)"
+    },
+    {
+      "name": "Energy Consumption Analysis for Additive Manufacturing",
+      "category": "Project",
+      "date": "2020-07",
+      "url": "",
+      "description": "UNIST UDMML Lab, Korea (Jul. 2020 ~ Jul. 2021)"
+    },
+    {
+      "name": "Manufacturing Bigdata Analysis - anomaly detection based on manufacturing process data",
+      "category": "Project",
+      "date": "2020-11",
+      "url": "",
+      "description": "Hankuk Mold, Korea (Nov. 2020 ~ Feb. 2021)"
+    },
+    {
+      "name": "Predicting stock price volatility using FinBERT",
+      "category": "Project",
+      "date": "2021-03",
+      "url": "",
+      "description": "AICP Program, UNIST, Korea (Mar. 2021 ~ Dec. 2021)"
+    },
+    {
+      "name": "Development of feasibility verification technology for resource hidden deep learning model",
+      "category": "Project",
+      "date": "2023-04",
+      "url": "",
+      "description": "ETRI, Korea (Apr. 2023 ~ Nov. 2023)"
+    },
+    {
+      "name": "Multi-inference performance based federated learning asynchronous consensus",
+      "category": "Project",
+      "date": "2023-06",
+      "url": "",
+      "description": "ETRI, Korea (Jun. 2023 ~ Nov. 2023)"
+    },
+    {
+      "name": "Hierarchical federated learning simulations and clients contribution measurement",
+      "category": "Project",
+      "date": "2024-06",
+      "url": "",
+      "description": "ETRI, Korea (Jun. 2024 ~ Nov. 2024)"
     }
   ]
 }

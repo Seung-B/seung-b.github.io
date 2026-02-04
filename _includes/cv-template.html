@@ -66,8 +66,14 @@
         </div>
         <div class="cv-item-content">
           <div class="cv-item-subtitle">{{ education.institution }}</div>
+          {% if education.advisor %}
+          <div class="cv-item-detail">Advisor: {{ education.advisor }}</div>
+          {% endif %}
           {% if education.gpa %}
           <div class="cv-item-detail">GPA: {{ education.gpa }}</div>
+          {% endif %}
+          {% if education.honors %}
+          <div class="cv-item-detail">{{ education.honors }}</div>
           {% endif %}
           {% if education.courses.size > 0 %}
           <div class="cv-item-detail">
@@ -130,6 +136,44 @@
   </div>
   {% endif %}
   
+  {% if cv.awards.size > 0 %}
+  <!-- Awards -->
+  <div class="cv-section">
+    <h2>Awards and Honors</h2>
+    <ul class="cv-list">
+      {% for award in cv.awards %}
+      <li class="cv-item">
+        <div class="cv-item-content">
+          <div class="cv-item-title">{{ award.title }}</div>
+          <div class="cv-item-subtitle">{{ award.awarder }}{% if award.date %} ({{ award.date }}){% endif %}</div>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+
+  {% if cv.patents.size > 0 %}
+  <!-- Patents -->
+  <div class="cv-section">
+    <h2>Patents</h2>
+    <ul class="cv-list">
+      {% for patent in cv.patents %}
+      <li class="cv-item">
+        <div class="cv-item-header">
+          <div class="cv-item-title">{{ patent.name }}</div>
+          <div class="cv-item-date">{{ patent.date }}</div>
+        </div>
+        <div class="cv-item-content">
+          <div class="cv-item-subtitle">{{ patent.inventors }}</div>
+          <div class="cv-item-detail">{{ patent.number }}</div>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+
   {% if cv.publications.size > 0 %}
   <!-- Publications -->
   <div class="cv-section">
@@ -184,6 +228,23 @@
   </div>
   {% endif %}
   
+  {% if cv.service.size > 0 %}
+  <!-- Academic Service -->
+  <div class="cv-section">
+    <h2>Academic Service</h2>
+    <ul class="cv-list">
+      {% for item in cv.service %}
+      <li class="cv-item">
+        <div class="cv-item-content">
+          <div class="cv-item-title">{{ item.role }}</div>
+          <div class="cv-item-detail">{{ item.venue }}</div>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+
   {% if cv.teaching.size > 0 %}
   <!-- Teaching -->
   <div class="cv-section">
