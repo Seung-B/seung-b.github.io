@@ -143,9 +143,10 @@ export const awards = [
     date: "2022",
   },
   {
-    title: "Data Science Contest, Encouragement Prize",
+    title: "The 1st UNIST-KAIST-POSTECH Data Science Contest, Encouragement Prize",
     awarder: "UNIST, KAIST, POSTECH",
-    date: "2022",
+    date: "2021",
+    image: "/images/data-science-contest.jpg",
   },
   {
     title: "The 1st KUIAI Hackathon, Excellence Award (2nd)",
