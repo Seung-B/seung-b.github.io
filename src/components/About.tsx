@@ -74,6 +74,7 @@ export default function About() {
                 <p className="text-sm text-slate-500">
                   {edu.school} · {edu.period}
                   {edu.advisor && ` · Advisor: ${edu.advisor}`}
+                  {edu.coadvisor && `, ${edu.coadvisor} (co-advisor)`}
                 </p>
                 {edu.honors && (
                   <p className="text-xs text-slate-400 mt-1">

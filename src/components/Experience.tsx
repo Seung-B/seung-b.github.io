@@ -18,7 +18,7 @@ function TimelineItem({
   return (
     <div
       className={`relative flex items-center ${
-        isLeft ? "justify-end md:pr-[calc(50%+2rem)]" : "md:pl-[calc(50%+2rem)]"
+        isLeft ? "justify-end md:pr-[calc(50%+1.5rem)]" : "md:pl-[calc(50%+1.5rem)]"
       }`}
     >
       {/* Dot on the line */}
@@ -41,7 +41,7 @@ function TimelineItem({
           duration: 0.6,
           ease: "easeOut",
         }}
-        className={`bg-white border border-slate-200 rounded-lg p-5 max-w-sm w-full hover:border-[var(--color-primary-light)] transition-colors ${
+        className={`bg-white border border-slate-200 rounded-lg p-5 max-w-md w-full hover:border-[var(--color-primary-light)] transition-colors ${
           isLeft ? "md:text-right" : "md:text-left"
         } text-center md:text-inherit`}
       >

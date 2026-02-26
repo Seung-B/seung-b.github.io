@@ -33,6 +33,7 @@ export const education = [
     school: "UNIST",
     period: "2024 – Present",
     advisor: "Sung Whan Yoon",
+    coadvisor: "Saerom Park",
   },
   {
     degree: "M.S.",
@@ -131,9 +132,9 @@ export const patents = [
 
 export const awards = [
   {
-    title: "ANTI-bad Challenge, 2nd Place",
-    awarder: "NeurIPS 2025 Workshop",
-    date: "2025",
+    title: "ANTI-BAD Challenge, 2nd Place",
+    awarder: "IEEE SaTML 2026",
+    date: "2026",
     url: "https://anti-bad.github.io/leaderboards/",
   },
   {
@@ -150,6 +151,7 @@ export const awards = [
     title: "The 1st KUIAI Hackathon, Excellence Award (2nd)",
     awarder: "Korea University",
     date: "2021",
+    image: "/images/kuiai-hackathon.jpg",
   },
   {
     title: "Undergraduate Full Scholarship",

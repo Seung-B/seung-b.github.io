@@ -2,7 +2,7 @@
 
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { awards, patents, service, projects, teaching } from "@/data/content";
+import { patents, service, projects, teaching } from "@/data/content";
 
 function HighlightItem({
   children,
@@ -29,17 +29,15 @@ function HighlightItem({
 function SectionBlock({
   title,
   children,
-  id,
 }: {
   title: string;
   children: React.ReactNode;
-  id?: string;
 }) {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-60px" });
 
   return (
-    <div ref={ref} id={id} className="mb-16 last:mb-0">
+    <div ref={ref} className="mb-16 last:mb-0">
       <motion.h3
         initial={{ opacity: 0, y: 15 }}
         animate={inView ? { opacity: 1, y: 0 } : {}}
@@ -54,9 +52,6 @@ function SectionBlock({
 }
 
 export default function MoreSections() {
-  const awardsRef = useRef(null);
-  const awardsInView = useInView(awardsRef, { once: true, margin: "-60px" });
-
   const patentsRef = useRef(null);
   const patentsInView = useInView(patentsRef, { once: true, margin: "-60px" });
 
@@ -81,33 +76,6 @@ export default function MoreSections() {
         >
           More
         </motion.h2>
-
-        {/* Awards */}
-        <SectionBlock title="Awards & Honors">
-          <div ref={awardsRef}>
-            {awards.map((a, i) => (
-              <HighlightItem key={i} index={i} inView={awardsInView}>
-                <p className="font-medium text-slate-700">
-                  {a.url ? (
-                    <a
-                      href={a.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="hover:text-[var(--color-primary)] transition-colors"
-                    >
-                      {a.title} ↗
-                    </a>
-                  ) : (
-                    a.title
-                  )}
-                </p>
-                <p className="text-sm text-slate-400">
-                  {a.awarder} · {a.date}
-                </p>
-              </HighlightItem>
-            ))}
-          </div>
-        </SectionBlock>
 
         {/* Patents */}
         <SectionBlock title="Patents">
