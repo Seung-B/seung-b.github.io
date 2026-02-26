@@ -1,26 +1,33 @@
 ## Cursor Cloud specific instructions
 
-This is a Jekyll-based academic portfolio website (Academic Pages template). There is one service: the Jekyll dev server.
+This is a personal academic portfolio website built with **Next.js 16 + TypeScript + Tailwind CSS + Framer Motion**. It is a single-page application with scroll-based navigation.
 
 ### Running the site
 
 ```bash
-bundle exec jekyll serve -l -H localhost --port 4000
+npm run dev
 ```
 
-Site is served at `http://localhost:4000/`. LiveReload is active on port 35729. Editing `_config.yml` requires a server restart; all other file changes are auto-reloaded.
+Dev server runs at `http://localhost:3000/` with hot module replacement.
 
-### JS asset build (optional)
-
-Only needed if modifying files under `assets/js/`:
+### Build & Export
 
 ```bash
-npm run build:js
+npm run build
 ```
 
-### Key notes
+Static export is configured (`output: 'export'` in `next.config.ts`), producing files in `out/` for GitHub Pages deployment.
 
-- Ruby gems are installed to `vendor/bundle` (configured via `bundle config set --local path 'vendor/bundle'`). This path is `.gitignore`-safe via Jekyll's exclude list.
-- The `github-pages` gem pins Jekyll to v3.x; do not try to upgrade to Jekyll 4 without also changing the Gemfile.
-- There are no automated test suites or linters configured in this repository. Validation is done by building the site (`bundle exec jekyll build`) and visually inspecting pages.
-- Python scripts in `markdown_generator/` are optional content-generation utilities, not part of the build pipeline.
+### Lint
+
+```bash
+npx eslint src/
+```
+
+### Key architecture notes
+
+- All personal content (publications, education, experience, etc.) lives in `src/data/content.ts`. Edit this single file to update site content.
+- Components are in `src/components/` — one file per section (Hero, About, Publications, Experience, MoreSections, Footer, Navbar).
+- Animations use Framer Motion with scroll-triggered `useInView` hooks. Each section manages its own animation state.
+- The site uses `react-icons` for icon sets (Feather Icons + Simple Icons).
+- No backend, database, or API — purely static.
