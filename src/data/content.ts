@@ -133,7 +133,7 @@ export const patents = [
 export const awards = [
   {
     title: "ANTI-BAD Challenge, 2nd Place",
-    awarder: "IEEE SaTML 2026",
+    awarder: "4th IEEE Conference on Secure and Trustworthy Machine Learning",
     date: "2026",
     url: "https://anti-bad.github.io/leaderboards/",
   },
