@@ -46,7 +46,12 @@ function TimelineItem({
         } text-center md:text-inherit`}
       >
         <p className="font-semibold text-slate-800">{item.position}</p>
-        <p className="text-sm text-slate-500 mt-1">{item.organization}</p>
+        <p className="text-sm text-slate-600 mt-1">{item.lab}</p>
+        <p className="text-sm text-slate-400">{item.institution}</p>
+        <p className="text-xs text-slate-500 mt-1.5">
+          Advisor: {item.advisor}
+          {item.coadvisor && `, ${item.coadvisor} (co-advisor)`}
+        </p>
         <p className="text-xs text-[var(--color-primary)] font-medium mt-2">
           {item.period}
         </p>

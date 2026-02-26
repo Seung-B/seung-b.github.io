@@ -31,7 +31,9 @@ function PubCard({ pub, index }: { pub: Publication; index: number }) {
             {pub.title}
           </h3>
           <p className="text-sm text-slate-500 mb-1">{pub.authors}</p>
-          <p className="text-sm text-slate-400 italic">{pub.venue}, {pub.year}</p>
+          <p className="text-sm text-slate-400 italic">
+            {pub.venue}{!pub.venue.includes(String(pub.year)) && `, ${pub.year}`}
+          </p>
         </div>
       </div>
 

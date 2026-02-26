@@ -65,7 +65,7 @@ export default function Hero() {
       className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden"
     >
       {/* Subtle wave background */}
-      <div className="absolute bottom-0 left-0 right-0 h-40 overflow-hidden opacity-30 pointer-events-none">
+      <div className="absolute bottom-0 left-0 right-0 h-[25vh] min-h-40 overflow-hidden opacity-30 pointer-events-none">
         <svg
           className="absolute bottom-0 w-[200%]"
           style={{ animation: "wave-drift 20s linear infinite" }}

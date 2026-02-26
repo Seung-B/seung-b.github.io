@@ -8,7 +8,7 @@ export const profile = {
   email: "ethereal0507@unist.ac.kr",
   website: "https://seung-b.github.io",
   summary:
-    "Ph.D. student at UNIST researching Federated Learning, Machine Unlearning, Trustworthy AI, and Large Model Safety.",
+    "Ph.D. student at UNIST researching Machine Unlearning, Federated Learning, Trustworthy AI, and Large Model Safety.",
   links: {
     googleScholar:
       "https://scholar.google.com/citations?user=ccebwAsAAAAJ",
@@ -19,8 +19,8 @@ export const profile = {
 };
 
 export const researchInterests = [
-  "Federated Learning",
   "Machine Unlearning",
+  "Federated Learning",
   "Trustworthy AI",
   "Deep Learning",
   "Large Model Safety",
@@ -33,7 +33,6 @@ export const education = [
     school: "UNIST",
     period: "2024 – Present",
     advisor: "Sung Whan Yoon",
-    gpa: "3.88 / 4.3",
   },
   {
     degree: "M.S.",
@@ -48,8 +47,7 @@ export const education = [
     school: "UNIST",
     period: "2019 – 2022",
     advisor: "Sunghoon Lim",
-    gpa: "3.7 / 4.3",
-    honors: "Cum Laude",
+    honors: "Magna Cum Laude",
   },
 ];
 
@@ -75,18 +73,6 @@ export const publications: Publication[] = [
   },
   {
     title:
-      "MetaVers: Meta-Learned Versatile Representations for Personalized Federated Learning",
-    authors: "JH Lim*, SB Ha*, SW Yoon",
-    venue: "WACV 2024",
-    year: 2024,
-    category: "conference",
-    paperUrl:
-      "https://openaccess.thecvf.com/content/WACV2024/papers/Lim_MetaVers_Meta-Learned_Versatile_Representations_for_Personalized_Federated_Learning_WACV_2024_paper.pdf",
-    slidesUrl:
-      "https://drive.google.com/file/d/1-GT4Eb5wEIbVAF86rsRGRLOt_lZD5D2q/view",
-  },
-  {
-    title:
       "Benchmarking federated learning for semantic datasets: Federated scene graph generation",
     authors: "SB Ha*, T Lee*, J Lim, SW Yoon",
     venue: "Pattern Recognition Letters, Vol. 197, pp. 195-201",
@@ -95,22 +81,41 @@ export const publications: Publication[] = [
     paperUrl:
       "https://www.sciencedirect.com/science/article/pii/S0167865525002727",
   },
+  {
+    title:
+      "MetaVers: Meta-Learned Versatile Representations for Personalized Federated Learning",
+    authors: "JH Lim*, SB Ha*, SW Yoon",
+    venue: "WACV 2024, pp. 2587-2596",
+    year: 2024,
+    category: "conference",
+    paperUrl:
+      "https://openaccess.thecvf.com/content/WACV2024/papers/Lim_MetaVers_Meta-Learned_Versatile_Representations_for_Personalized_Federated_Learning_WACV_2024_paper.pdf",
+    slidesUrl:
+      "https://drive.google.com/file/d/1-GT4Eb5wEIbVAF86rsRGRLOt_lZD5D2q/view",
+  },
 ];
 
 export const experience = [
   {
     position: "Research Student",
-    organization: "Machine Intelligence and Information Learning Lab, UNIST",
+    lab: "Machine Intelligence and Information Theory Lab",
+    institution: "UNIST",
+    advisor: "Sung Whan Yoon",
+    coadvisor: "Saerom Park",
     period: "2022.08 – Present",
   },
   {
     position: "Undergraduate Research Intern",
-    organization: "Homomorphic Encryption Lab, UNIST",
+    lab: "Homomorphic Encryption Lab",
+    institution: "UNIST",
+    advisor: "Miran Kim",
     period: "2021.12 – 2022.07",
   },
   {
     position: "Research Intern",
-    organization: "Unstructured Data Mining and Machine Learning Lab, UNIST",
+    lab: "Unstructured Data Mining and Machine Learning Lab",
+    institution: "UNIST",
+    advisor: "Sunghoon Lim",
     period: "2020.05 – 2021.12",
   },
 ];
@@ -126,9 +131,15 @@ export const patents = [
 
 export const awards = [
   {
-    title: "The 1st KUIAI Hackathon, Excellence Award (2nd)",
-    awarder: "Korea University",
-    date: "2021",
+    title: "ANTI-bad Challenge, 2nd Place",
+    awarder: "NeurIPS 2025 Workshop",
+    date: "2025",
+    url: "https://anti-bad.github.io/leaderboards/",
+  },
+  {
+    title: "Graduate Full Scholarship",
+    awarder: "UNIST",
+    date: "2022",
   },
   {
     title: "Data Science Contest, Encouragement Prize",
@@ -136,14 +147,14 @@ export const awards = [
     date: "2022",
   },
   {
+    title: "The 1st KUIAI Hackathon, Excellence Award (2nd)",
+    awarder: "Korea University",
+    date: "2021",
+  },
+  {
     title: "Undergraduate Full Scholarship",
     awarder: "UNIST",
     date: "2019",
-  },
-  {
-    title: "Graduate Full Scholarship",
-    awarder: "UNIST",
-    date: "2022",
   },
 ];
 

@@ -75,11 +75,9 @@ export default function About() {
                   {edu.school} · {edu.period}
                   {edu.advisor && ` · Advisor: ${edu.advisor}`}
                 </p>
-                {(edu.gpa || edu.honors) && (
+                {edu.honors && (
                   <p className="text-xs text-slate-400 mt-1">
-                    {edu.gpa && `GPA: ${edu.gpa}`}
-                    {edu.gpa && edu.honors && " · "}
-                    {edu.honors && <em>{edu.honors}</em>}
+                    <em>{edu.honors}</em>
                   </p>
                 )}
               </div>

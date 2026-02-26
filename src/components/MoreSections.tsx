@@ -87,7 +87,20 @@ export default function MoreSections() {
           <div ref={awardsRef}>
             {awards.map((a, i) => (
               <HighlightItem key={i} index={i} inView={awardsInView}>
-                <p className="font-medium text-slate-700">{a.title}</p>
+                <p className="font-medium text-slate-700">
+                  {a.url ? (
+                    <a
+                      href={a.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-[var(--color-primary)] transition-colors"
+                    >
+                      {a.title} ↗
+                    </a>
+                  ) : (
+                    a.title
+                  )}
+                </p>
                 <p className="text-sm text-slate-400">
                   {a.awarder} · {a.date}
                 </p>
