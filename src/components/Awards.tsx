@@ -45,7 +45,7 @@ export default function Awards() {
 
   return (
     <>
-      <section id="awards" className="py-32 px-6 bg-slate-50/50" ref={ref}>
+      <section id="awards" className="py-32 px-6" ref={ref}>
         <div className="max-w-3xl mx-auto">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}

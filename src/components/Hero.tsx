@@ -103,39 +103,6 @@ export default function Hero() {
             </linearGradient>
           </defs>
         </svg>
-
-        {/* Tiny surfer on the wave */}
-        <motion.svg
-          initial={{ x: "-10%" }}
-          animate={{ x: "110%" }}
-          transition={{ duration: 18, repeat: Infinity, ease: "linear" }}
-          className="absolute bottom-[38%] w-6 h-6 opacity-70"
-          viewBox="0 0 64 64"
-          fill="none"
-        >
-          {/* Person */}
-          <circle cx="32" cy="12" r="5" fill="#0e7490" />
-          <path
-            d="M32 17 C32 17 28 28 28 32 C28 34 30 35 32 35 C34 35 36 34 36 32 C36 28 32 17 32 17Z"
-            fill="#0e7490"
-          />
-          {/* Arms out for balance */}
-          <path
-            d="M22 24 L28 27 M36 27 L42 24"
-            stroke="#0e7490"
-            strokeWidth="2.5"
-            strokeLinecap="round"
-          />
-          {/* Surfboard */}
-          <ellipse cx="32" cy="40" rx="16" ry="3" fill="#06b6d4" rx-="16" />
-          {/* Legs */}
-          <path
-            d="M30 35 L29 39 M34 35 L35 39"
-            stroke="#0e7490"
-            strokeWidth="2"
-            strokeLinecap="round"
-          />
-        </motion.svg>
       </div>
 
       <div className="text-center z-10 px-6">

@@ -21,28 +21,48 @@ export default function About() {
           About
         </motion.h2>
 
-        {/* Bio text */}
-        <motion.div
-          initial={{ opacity: 0, x: -60 }}
-          animate={inView ? { opacity: 1, x: 0 } : {}}
-          transition={{ duration: 0.7, delay: 0.15, ease: "easeOut" }}
-          className="text-center mb-16"
-        >
-          <p className="text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto">
-            I am a Ph.D. student at{" "}
-            <a
-              href="https://www.unist.ac.kr/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[var(--color-primary)] hover:underline"
-            >
-              {profile.affiliationFull}
-            </a>{" "}
-            ({profile.affiliation}), {profile.department}. My research focuses
-            on building trustworthy and efficient machine learning systems,
-            particularly in federated learning and machine unlearning.
-          </p>
-        </motion.div>
+        {/* Profile photo + Bio */}
+        <div className="flex flex-col md:flex-row items-center gap-8 mb-16">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={inView ? { opacity: 1, scale: 1 } : {}}
+            transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}
+            className="shrink-0"
+          >
+            <img
+              src="/images/profile.jpg"
+              alt={profile.name}
+              className="w-36 h-36 rounded-full object-cover border-2 border-slate-100 shadow-sm"
+            />
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, x: 30 }}
+            animate={inView ? { opacity: 1, x: 0 } : {}}
+            transition={{ duration: 0.7, delay: 0.15, ease: "easeOut" }}
+            className="text-center md:text-left"
+          >
+            <p className="text-lg text-slate-600 leading-relaxed mb-4">
+              I am a Ph.D. student at{" "}
+              <a
+                href="https://www.unist.ac.kr/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[var(--color-primary)] hover:underline"
+              >
+                {profile.affiliationFull}
+              </a>{" "}
+              ({profile.affiliation}), {profile.department}. My research focuses
+              on building trustworthy and efficient machine learning systems,
+              particularly in machine unlearning and federated learning.
+            </p>
+            <p className="text-lg text-slate-600 leading-relaxed">
+              Outside the lab, I love staying active — you can find me catching
+              waves 🏄, sending bouldering routes 🧗, or playing pickup
+              basketball 🏀.
+            </p>
+          </motion.div>
+        </div>
 
         {/* Education */}
         <motion.h3

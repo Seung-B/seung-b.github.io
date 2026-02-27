@@ -65,7 +65,7 @@ export default function MoreSections() {
   const projectsInView = useInView(projectsRef, { once: true, margin: "-60px" });
 
   return (
-    <section id="more" className="py-32 px-6 bg-slate-50/50">
+    <section id="more" className="py-32 px-6">
       <div className="max-w-3xl mx-auto">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
