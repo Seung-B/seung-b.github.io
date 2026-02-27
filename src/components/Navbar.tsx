@@ -44,7 +44,7 @@ export default function Navbar() {
     setMenuOpen(false);
     const el = document.getElementById(id);
     if (el) {
-      const offset = id === "hero" ? 0 : el.offsetTop - 80;
+      const offset = id === "hero" ? 0 : el.offsetTop - 64;
       window.scrollTo({ top: offset, behavior: "smooth" });
     }
   };
