@@ -1,7 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
+import { FiMenu, FiX } from "react-icons/fi";
 
 const sections = [
   { id: "hero", label: "Home" },
@@ -15,6 +16,7 @@ const sections = [
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [active, setActive] = useState("hero");
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const onScroll = () => {
@@ -39,6 +41,7 @@ export default function Navbar() {
   }, []);
 
   const scrollTo = (id: string) => {
+    setMenuOpen(false);
     const el = document.getElementById(id);
     if (el) {
       const offset = id === "hero" ? 0 : el.offsetTop - 80;
@@ -52,7 +55,7 @@ export default function Navbar() {
       animate={{ y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
+        scrolled || menuOpen
           ? "bg-white/90 backdrop-blur-md shadow-sm"
           : "bg-transparent"
       }`}
@@ -61,13 +64,14 @@ export default function Navbar() {
         <button
           onClick={() => scrollTo("hero")}
           className={`text-lg font-semibold transition-colors ${
-            scrolled ? "text-slate-800" : "text-slate-700"
+            scrolled || menuOpen ? "text-slate-800" : "text-slate-700"
           } hover:text-[var(--color-primary)]`}
         >
           SB Ha
         </button>
 
-        <div className="flex gap-8">
+        {/* Desktop nav */}
+        <div className="hidden md:flex gap-8">
           {sections.slice(1).map((s) => (
             <button
               key={s.id}
@@ -85,7 +89,45 @@ export default function Navbar() {
             </button>
           ))}
         </div>
+
+        {/* Mobile hamburger */}
+        <button
+          onClick={() => setMenuOpen(!menuOpen)}
+          className="md:hidden text-slate-600 hover:text-slate-800 transition-colors"
+          aria-label="Toggle menu"
+        >
+          {menuOpen ? <FiX size={22} /> : <FiMenu size={22} />}
+        </button>
       </div>
+
+      {/* Mobile dropdown */}
+      <AnimatePresence>
+        {menuOpen && (
+          <motion.div
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: "auto" }}
+            exit={{ opacity: 0, height: 0 }}
+            transition={{ duration: 0.2, ease: "easeOut" }}
+            className="md:hidden overflow-hidden bg-white/95 backdrop-blur-md border-t border-slate-100"
+          >
+            <div className="max-w-5xl mx-auto px-6 py-4 flex flex-col gap-1">
+              {sections.slice(1).map((s) => (
+                <button
+                  key={s.id}
+                  onClick={() => scrollTo(s.id)}
+                  className={`text-left px-3 py-2.5 rounded-lg text-sm font-medium transition-colors ${
+                    active === s.id
+                      ? "text-[var(--color-primary)] bg-cyan-50/50"
+                      : "text-slate-600 hover:text-slate-800 hover:bg-slate-50"
+                  }`}
+                >
+                  {s.label}
+                </button>
+              ))}
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </motion.nav>
   );
 }
