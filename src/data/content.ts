@@ -48,7 +48,7 @@ export const education = [
     school: "UNIST",
     period: "2019 – 2022",
     advisor: "Sunghoon Lim",
-    honors: "Magna Cum Laude",
+    honors: "Magna Cum Laude · Early Graduation (7 semesters)",
   },
 ];
 
