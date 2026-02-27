@@ -1,12 +1,68 @@
 "use client";
 
-import { motion, useInView } from "framer-motion";
-import { useRef } from "react";
+import { motion, useInView, AnimatePresence } from "framer-motion";
+import { useRef, useState } from "react";
+import { FiMail, FiLinkedin, FiX } from "react-icons/fi";
 import { profile, education } from "@/data/content";
+
+function ContactModal({ onClose }: { onClose: () => void }) {
+  return (
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      onClick={onClose}
+      className="fixed inset-0 z-[100] flex items-center justify-center bg-black/50 backdrop-blur-sm p-8"
+    >
+      <motion.div
+        initial={{ scale: 0.9, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        exit={{ scale: 0.9, opacity: 0 }}
+        onClick={(e) => e.stopPropagation()}
+        className="bg-white rounded-xl p-8 shadow-2xl max-w-sm w-full relative"
+      >
+        <button
+          onClick={onClose}
+          className="absolute top-4 right-4 text-slate-400 hover:text-slate-600 transition-colors"
+        >
+          <FiX size={20} />
+        </button>
+        <h3 className="text-lg font-semibold text-slate-800 mb-6 text-center">
+          Let&apos;s Connect ☕
+        </h3>
+        <div className="space-y-4">
+          <a
+            href={`mailto:${profile.email}`}
+            className="flex items-center gap-3 px-4 py-3 rounded-lg border border-slate-200 hover:border-[var(--color-primary)] hover:bg-cyan-50/50 transition-all"
+          >
+            <FiMail className="text-[var(--color-primary)]" size={20} />
+            <div>
+              <p className="text-sm font-medium text-slate-700">Email</p>
+              <p className="text-xs text-slate-400">{profile.email}</p>
+            </div>
+          </a>
+          <a
+            href={profile.links.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-3 px-4 py-3 rounded-lg border border-slate-200 hover:border-[var(--color-primary)] hover:bg-cyan-50/50 transition-all"
+          >
+            <FiLinkedin className="text-[var(--color-primary)]" size={20} />
+            <div>
+              <p className="text-sm font-medium text-slate-700">LinkedIn</p>
+              <p className="text-xs text-slate-400">in/seung0b</p>
+            </div>
+          </a>
+        </div>
+      </motion.div>
+    </motion.div>
+  );
+}
 
 export default function About() {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-100px" });
+  const [showContact, setShowContact] = useState(false);
 
   return (
     <section id="about" className="py-32 px-6" ref={ref}>
@@ -32,7 +88,7 @@ export default function About() {
             <img
               src="/images/profile.jpeg"
               alt={profile.name}
-              className="w-52 rounded-xl object-cover border-2 border-slate-100 shadow-sm md:self-stretch"
+              className="w-60 rounded-xl object-cover border-2 border-slate-100 shadow-sm md:self-stretch"
             />
           </motion.div>
 
@@ -64,7 +120,13 @@ export default function About() {
             <p className="text-lg text-slate-600 leading-relaxed">
               Always happy to connect — whether it&apos;s a research
               collaboration, an interesting opportunity, or just a casual coffee
-              chat ☕. Feel free to reach out anytime!
+              chat ☕.{" "}
+              <button
+                onClick={() => setShowContact(true)}
+                className="text-[var(--color-primary)] hover:underline font-medium"
+              >
+                Feel free to reach out anytime!
+              </button>
             </p>
           </motion.div>
         </div>
@@ -111,6 +173,10 @@ export default function About() {
           ))}
         </div>
       </div>
+
+      <AnimatePresence>
+        {showContact && <ContactModal onClose={() => setShowContact(false)} />}
+      </AnimatePresence>
     </section>
   );
 }
