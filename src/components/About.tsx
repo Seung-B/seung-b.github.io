@@ -30,9 +30,9 @@ export default function About() {
             className="shrink-0"
           >
             <img
-              src="/images/profile.jpg"
+              src="/images/profile.jpeg"
               alt={profile.name}
-              className="w-36 h-36 rounded-full object-cover border-2 border-slate-100 shadow-sm"
+              className="w-48 h-48 rounded-xl object-cover border-2 border-slate-100 shadow-sm"
             />
           </motion.div>
 
