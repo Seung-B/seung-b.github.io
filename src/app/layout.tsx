@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: "SeungBum Ha",
   description:
     "Ph.D. Student at UNIST — Federated Learning, Machine Unlearning, Trustworthy AI",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
