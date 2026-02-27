@@ -22,7 +22,7 @@ export default function About() {
         </motion.h2>
 
         {/* Profile photo + Bio */}
-        <div className="flex flex-col md:flex-row items-center gap-8 mb-16">
+        <div className="flex flex-col md:flex-row md:items-stretch items-center gap-8 mb-16">
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={inView ? { opacity: 1, scale: 1 } : {}}
@@ -32,7 +32,7 @@ export default function About() {
             <img
               src="/images/profile.jpeg"
               alt={profile.name}
-              className="w-48 h-48 rounded-xl object-cover border-2 border-slate-100 shadow-sm"
+              className="w-52 rounded-xl object-cover border-2 border-slate-100 shadow-sm md:self-stretch"
             />
           </motion.div>
 
