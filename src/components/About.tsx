@@ -56,10 +56,15 @@ export default function About() {
               on building trustworthy and efficient machine learning systems,
               particularly in machine unlearning and federated learning.
             </p>
-            <p className="text-lg text-slate-600 leading-relaxed">
+            <p className="text-lg text-slate-600 leading-relaxed mb-4">
               Outside the lab, I love staying active — you can find me catching
               waves 🏄, sending bouldering routes 🧗, or playing pickup
               basketball 🏀.
+            </p>
+            <p className="text-lg text-slate-600 leading-relaxed">
+              Always happy to connect — whether it&apos;s a research
+              collaboration, an interesting opportunity, or just a casual coffee
+              chat ☕. Feel free to reach out anytime!
             </p>
           </motion.div>
         </div>
