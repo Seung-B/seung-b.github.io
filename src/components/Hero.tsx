@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { profile, researchInterests } from "@/data/content";
-import SkyBody from "./SkyBody";
 
 function Typewriter({ words }: { words: string[] }) {
   const [index, setIndex] = useState(0);
@@ -65,9 +64,6 @@ export default function Hero() {
       id="hero"
       className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden"
     >
-      {/* Sun / Moon based on current time */}
-      <SkyBody />
-
       {/* Subtle wave background */}
       <div className="absolute bottom-0 left-0 right-0 h-[25vh] min-h-40 overflow-hidden opacity-30 pointer-events-none">
         <svg

@@ -118,14 +118,25 @@ export default function Publications() {
           ))}
         </motion.div>
 
-        {/* Cards */}
-        <div className="space-y-4">
+        {/* Cards — scrollable when more than 4 */}
+        <div
+          className={`space-y-4 ${
+            filtered.length > 4
+              ? "max-h-[calc(4*10.5rem)] overflow-y-auto pr-2 scrollbar-thin"
+              : ""
+          }`}
+        >
           <AnimatePresence mode="popLayout">
             {filtered.map((pub, i) => (
               <PubCard key={pub.title} pub={pub} index={i} />
             ))}
           </AnimatePresence>
         </div>
+        {filtered.length > 4 && (
+          <p className="text-center text-xs text-slate-400 mt-3">
+            Scroll to see more ↓
+          </p>
+        )}
       </div>
     </section>
   );
