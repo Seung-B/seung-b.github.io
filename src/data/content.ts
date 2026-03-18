@@ -65,6 +65,14 @@ export type Publication = {
 export const publications: Publication[] = [
   {
     title:
+      "On-Trajectory Coding for Optimizing End-to-End Latency of Image Semantic Communications via Diffusion Models",
+    authors: "J Park, SB Ha, SW Yoon",
+    venue: "Under Review",
+    year: 2025,
+    category: "preprint",
+  },
+  {
+    title:
       "Unlearning's Blind Spots: Over-Unlearning and Prototypical Relearning Attack",
     authors: "SB Ha, S Park, SW Yoon",
     venue: "arXiv preprint (Under Review)",
