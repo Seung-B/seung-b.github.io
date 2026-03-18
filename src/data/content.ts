@@ -82,7 +82,7 @@ export const publications: Publication[] = [
   },
   {
     title:
-      "Benchmarking federated learning for semantic datasets: Federated scene graph generation",
+      "Benchmarking Federated Learning for Semantic Datasets: Federated Scene Graph Generation",
     authors: "SB Ha*, T Lee*, J Lim, SW Yoon",
     venue: "Pattern Recognition Letters, Vol. 197, pp. 195-201",
     year: 2025,
@@ -140,7 +140,7 @@ export const patents = [
 
 export const awards = [
   {
-    title: "ANTI-BAD Challenge, 2nd Place",
+    title: "🥈 ANTI-BAD Challenge, 2nd Place",
     awarder: "4th IEEE Conference on Secure and Trustworthy Machine Learning",
     date: "2026",
     url: "https://anti-bad.github.io/leaderboards/",
@@ -157,7 +157,7 @@ export const awards = [
     image: "/images/data-science-contest.jpg",
   },
   {
-    title: "The 1st KUIAI Hackathon, Excellence Award (2nd)",
+    title: "🥈 The 1st KUIAI Hackathon, Excellence Award (2nd)",
     awarder: "Korea University",
     date: "2021",
     image: "/images/kuiai-hackathon.jpg",
