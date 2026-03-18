@@ -68,7 +68,7 @@ export const publications: Publication[] = [
       "On-Trajectory Coding for Optimizing End-to-End Latency of Image Semantic Communications via Diffusion Models",
     authors: "J Park, SB Ha, SW Yoon",
     venue: "Under Review",
-    year: 2025,
+    year: 2026,
     category: "preprint",
   },
   {
