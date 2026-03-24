@@ -172,7 +172,7 @@ export const awards = [
 export const service = [
   {
     role: "Reviewer",
-    venue: "ICLR 2025, ICLR 2026, CVPR 2026, ECCV 2026",
+    venue: "ICLR 2025, ICLR 2026, CVPR 2026, ECCV 2026, NeurIPS 2026",
   },
 ];
 
