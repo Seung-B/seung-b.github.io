@@ -75,9 +75,9 @@ export const publications: Publication[] = [
     title:
       "Unlearning's Blind Spots: Over-Unlearning and Prototypical Relearning Attack",
     authors: "SB Ha, S Park, SW Yoon",
-    venue: "arXiv preprint (Under Review)",
-    year: 2025,
-    category: "preprint",
+    venue: "ICML 2026",
+    year: 2026,
+    category: "conference",
     paperUrl: "https://arxiv.org/pdf/2506.01318",
   },
   {
