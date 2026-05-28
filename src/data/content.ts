@@ -73,6 +73,22 @@ export const publications: Publication[] = [
   },
   {
     title:
+      "Understanding Robustness Against Gradient Inversion Attacks: A Flat Minima Perspective",
+    authors: "S Hwang*, S Bae*, SB Ha, J Lee, SW Yoon",
+    venue: "Under Review",
+    year: 2026,
+    category: "preprint",
+  },
+  {
+    title:
+      "When Removal Fails to Suppress: Rethinking Unlearning Beyond Retrain Equivalence",
+    authors: "SB Ha, S Park, SW Yoon",
+    venue: "Under Review",
+    year: 2026,
+    category: "preprint",
+  },
+  {
+    title:
       "Unlearning's Blind Spots: Over-Unlearning and Prototypical Relearning Attack",
     authors: "SB Ha, S Park, SW Yoon",
     venue: "ICML 2026",
@@ -178,6 +194,11 @@ export const service = [
 
 export const projects = [
   {
+    name: "Development of an Industry-Specified Intelligent Data Processing and Federated Learning Platform",
+    org: "IITP, Korea",
+    period: "Apr. 2026 – Present",
+  },
+  {
     name: "Hierarchical federated learning simulations and clients contribution measurement",
     org: "ETRI, Korea",
     period: "Jun. 2024 – Nov. 2024",
@@ -188,24 +209,14 @@ export const projects = [
     period: "Jun. 2023 – Nov. 2023",
   },
   {
-    name: "Development of feasibility verification technology for resource hidden deep learning model",
+    name: "Development of feasibility verification technology for resource-hidden deep learning models",
     org: "ETRI, Korea",
     period: "Apr. 2023 – Nov. 2023",
-  },
-  {
-    name: "Predicting stock price volatility using FinBERT",
-    org: "AICP Program, UNIST",
-    period: "Mar. 2021 – Dec. 2021",
   },
   {
     name: "Manufacturing Bigdata Analysis — anomaly detection based on manufacturing process data",
     org: "Hankuk Mold, Korea",
     period: "Nov. 2020 – Feb. 2021",
-  },
-  {
-    name: "Energy Consumption Analysis for Additive Manufacturing",
-    org: "UNIST UDMML Lab",
-    period: "Jul. 2020 – Jul. 2021",
   },
   {
     name: "Optimization of AI-based fusion manufacturing process conditions and prediction of defects",
