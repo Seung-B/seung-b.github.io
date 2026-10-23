@@ -55,6 +55,11 @@ function TimelineItem({
         <p className="text-xs text-[var(--color-primary)] font-medium mt-2">
           {item.period}
         </p>
+        {item.description && (
+          <p className="text-sm text-slate-500 leading-relaxed mt-3">
+            {item.description}
+          </p>
+        )}
       </motion.div>
     </div>
   );

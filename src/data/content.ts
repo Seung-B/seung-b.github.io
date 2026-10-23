@@ -122,6 +122,15 @@ export const publications: Publication[] = [
 
 export const experience = [
   {
+    position: "Visiting Scholar",
+    lab: "Adaptive Machine Intelligence Lab",
+    institution: "Nanyang Technological University (NTU Singapore)",
+    advisor: "Jaehong Yoon",
+    period: "2026.09 – Present",
+    description:
+      "Research on contextual understanding and behavioral improvement in vision-language-action (VLA) models.",
+  },
+  {
     position: "Research Student",
     lab: "Machine Intelligence and Information Theory Lab",
     institution: "UNIST",
@@ -146,6 +155,13 @@ export const experience = [
 ];
 
 export const patents = [
+  {
+    title:
+      "Artificial intelligence model unlearning device for suppressing over-unlearning and relearning attacks, and method thereof",
+    number: "KR-Application No. 10-2026-0164742",
+    inventors: "Sung Whan Yoon, Saerom Park, SeungBum Ha",
+    year: 2026,
+  },
   {
     title: "Meta-learning algorithms for personalized federated learning",
     number: "KR-Application No. 10-2023-0037350",
@@ -188,7 +204,11 @@ export const awards = [
 export const service = [
   {
     role: "Reviewer",
-    venue: "ICLR 2025, ICLR 2026, CVPR 2026, ECCV 2026, NeurIPS 2026",
+    venue: "ICLR 2025, ICLR 2026, ICLR 2027, CVPR 2026, ECCV 2026, NeurIPS 2026",
+  },
+  {
+    role: "Reviewer",
+    venue: "Pattern Recognition Letters",
   },
 ];
 
